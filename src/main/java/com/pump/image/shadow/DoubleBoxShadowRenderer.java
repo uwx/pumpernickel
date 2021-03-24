@@ -87,8 +87,8 @@ public class DoubleBoxShadowRenderer implements ShadowRenderer {
 		public int compareTo(Combo o) {
 			int max = Math.max(sortedRadii.size(), o.sortedRadii.size());
 			for (int a = 0; a < max; a++) {
-				Float v1 = a < sortedRadii.size() ? sortedRadii.get(a) : -1;
-				Float v2 = a < o.sortedRadii.size() ? o.sortedRadii.get(a) : -1;
+				Float v1 = a < sortedRadii.size() ? sortedRadii.get(a) : -1F;
+				Float v2 = a < o.sortedRadii.size() ? o.sortedRadii.get(a) : -1F;
 				int k = v1.compareTo(v2);
 				if (k != 0)
 					return k;
